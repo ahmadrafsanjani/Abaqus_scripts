@@ -4,7 +4,7 @@ ABAQUS Python script
 Project: Membrane and Bending Strain Energy for Shell Elements
 Description: Deformation of a square frame with Periodic Boundary Conditions 
 by Ahmad Rafsanjani (https://github.com/ahmadrafsanjani)
-Last update: 26 March 2017 (tested on ABAQUS/CAE 6.12-1)
+Last update: 6 June 2017 (tested on ABAQUS/CAE 6.12-1)
 ==========================================================================
 """
 
