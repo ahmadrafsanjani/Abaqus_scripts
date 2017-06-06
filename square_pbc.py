@@ -3,9 +3,7 @@
 ABAQUS Python script
 Project: Square PBC
 Description: Deformation of a square frame with Periodic Boundary Conditions 
-
 by Ahmad Rafsanjani (https://github.com/ahmadrafsanjani)
-
 Last update: 26 March 2017 (tested on ABAQUS/CAE 6.12-1)
 ==========================================================================
 """
