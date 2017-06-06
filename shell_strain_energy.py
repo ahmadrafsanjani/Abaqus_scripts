@@ -1,15 +1,17 @@
 """
 ==========================================================================
-Membrane and Bending Strain Energy for Shell Elements
-
-Code: Ahmad Rafsanjani
-Last update: 6 June 2017 
-Harvard University
-Gmail: ahmad.rafsanjani@gmail.com
-
-Tested on ABAQUS 6.12-1
+ABAQUS Python script
+Project: Membrane and Bending Strain Energy for Shell Elements
+Description: Deformation of a square frame with Periodic Boundary Conditions 
+by Ahmad Rafsanjani (https://github.com/ahmadrafsanjani)
+Last update: 26 March 2017 (tested on ABAQUS/CAE 6.12-1)
 ==========================================================================
 """
+
+#   ------------------------------------------------------------------------
+#   How to run this script?
+#   Windows command line:   abaqus cae nogui=shell_strain_energy.py
+#   ABAQUS CAE: File -> Run Script...-> Browse shell_strain_energy.py  
 
 #   ------------------------------------------------------------------------
 #   Initialize simulation
@@ -280,6 +282,6 @@ for i in range(N_f):
 
 
 
-np.savetxt('shell_energy.csv', ENERGY, fmt='%f',delimiter=',')
+np.savetxt('shell_strain_energy.csv', ENERGY, fmt='%f',delimiter=',')
 
 
