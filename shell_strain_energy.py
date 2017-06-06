@@ -273,14 +273,15 @@ for i in range(N_f):
         BSE[j]=0.5*AREA*(SK1*SM1+SK2*SM2+SK3*SM3+SF4*SE4+SF5*SE5)
         MSE[j]=0.5*AREA*(SE1*SF1+SE2*SF2+SE3*SF3)
 
-    ENERGY[i][0]=ALLSE[i][0]
+    ENERGY[i][0]=ALLSE[i][0]         # Time
     ENERGY[i][1]=ALLSE[i][1]         # Total Strain Energy (Abaqus)
     ENERGY[i][2]=sum(BSE)+sum(MSE)   # Total Strain Energy (integrated)
     ENERGY[i][3]=sum(BSE)            # Total Bending Strain Energy
     ENERGY[i][4]=sum(MSE)            # Total Membrane Strain Energy
         
 
-
+#   ------------------------------------------------------------------------
+#   Output simulation Results
 
 np.savetxt('shell_strain_energy.csv', ENERGY, fmt='%f',delimiter=',')
 
